@@ -10,6 +10,7 @@
 #include <chrono>
 #include <cstring>
 #include <algorithm>
+#include <array>
 #include <sstream>
 #include <iomanip>
 #include <mutex>
