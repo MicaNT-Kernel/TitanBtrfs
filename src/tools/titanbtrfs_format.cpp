@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
         std::cout << "Usage: titanbtrfs_format <image_path_or_device> [options]\n\n";
         std::cout << "Options:\n";
         std::cout << "  --size <MB>       Volume size in megabytes (default: 256, minimum: 16)\n";
-        std::cout << "  --label <name>    Volume label (default: TITAN_BTRFS)\n";
+        std::cout << "  --label <name>    Volume label (default: Btrfs)\n";
         std::cout << "  --sectorsize <B>  Sector size in bytes (default: 4096)\n";
         std::cout << "  --nodesize <B>    B-tree node size in bytes (default: 16384)\n\n";
         std::cout << "Examples:\n";
@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
 
     std::string devicePath = argv[1];
     uint64_t sizeMB = 256;
-    std::string label = "TITAN_BTRFS";
+    std::string label = "Btrfs";
     uint32_t sectorSize = BTRFS_DEFAULT_SECTOR_SIZE;
     uint32_t nodeSize = BTRFS_DEFAULT_NODE_SIZE;
 

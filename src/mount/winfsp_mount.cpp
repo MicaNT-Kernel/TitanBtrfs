@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
         std::cout << "Usage: titanbtrfs_mount <image_path_or_device> <drive_letter:> [options]\n\n";
         std::cout << "Options:\n";
         std::cout << "  --subvol <name_or_id>  Mount specific subvolume (default: @ / ID 5)\n";
-        std::cout << "  --label <name>         Set volume label (default: TITAN_BTRFS)\n";
+        std::cout << "  --label <name>         Set volume label (default: Btrfs)\n";
         std::cout << "  --format               Format image as clean Btrfs volume before mounting\n";
         std::cout << "  --size <MB>            Backing file size in megabytes if created (default: 256)\n";
         std::cout << "  --sectorsize <B>       Sector size in bytes (default: 4096)\n";
@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
     std::string devicePath;
     std::string driveLetter;
     std::string subvolTarget = "@";
-    std::wstring volumeLabel = L"TITAN_BTRFS";
+    std::wstring volumeLabel = L"Btrfs";
     bool doFormat = false;
     uint64_t diskSizeMB = 256;
     uint32_t sectorSize = BTRFS_DEFAULT_SECTOR_SIZE;

@@ -354,7 +354,7 @@ public:
     // Formatting & Mounting
     // ------------------------------------------------------------------------
     bool format(uint64_t totalBytes, uint32_t sectorSize = BTRFS_DEFAULT_SECTOR_SIZE,
-                uint32_t nodeSize = BTRFS_DEFAULT_NODE_SIZE, const std::string& label = "TITAN_BTRFS") {
+                uint32_t nodeSize = BTRFS_DEFAULT_NODE_SIZE, const std::string& label = "Btrfs") {
         std::lock_guard<std::mutex> lock(fsMutex_);
 
         if (!device_ || totalBytes < 16 * 1024 * 1024) { // Minimum 16 MB

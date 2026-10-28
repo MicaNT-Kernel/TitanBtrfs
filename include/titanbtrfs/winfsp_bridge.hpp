@@ -239,7 +239,7 @@ public:
     }
 
     bool mount(std::shared_ptr<BtrfsFileSystem> fs, const std::wstring& driveLetter,
-               const std::wstring& volumeLabel = L"TITAN_BTRFS", uint64_t subvolId = BTRFS_FS_TREE_OBJECTID) {
+               const std::wstring& volumeLabel = L"Btrfs", uint64_t subvolId = BTRFS_FS_TREE_OBJECTID) {
         if (mounted_ || !fs) return false;
 
         auto& fsp = WinFspApi::Get();
